@@ -1,6 +1,7 @@
 package com.example.calculator
 
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         val calcput = findViewById<TextView>(R.id.calcDisplay)
         calcput.text = currentVal.toString()
     }
-    fun clearCalcput(){
+    fun clearCalcput(view: View){
         currentVal = 0
         updateCalcput()
 
