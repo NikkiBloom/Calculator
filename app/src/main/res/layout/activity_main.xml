@@ -48,7 +48,7 @@
         app:useDefaultMargins="true">
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/Bclear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#40216A"
@@ -60,7 +60,7 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/Bdelete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#40216A"
@@ -72,7 +72,7 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button13"
+            android:id="@+id/Bdivide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#40216A"
@@ -84,7 +84,7 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button14"
+            android:id="@+id/Bone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#8E6BBD"
@@ -96,7 +96,7 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button15"
+            android:id="@+id/Bfour"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#8E6BBD"
@@ -108,7 +108,7 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button18"
+            android:id="@+id/Bseven"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#8E6BBD"
@@ -120,7 +120,7 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button20"
+            android:id="@+id/Bzero"
             android:layout_width="183dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#8E6BBD"
@@ -133,7 +133,7 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button21"
+            android:id="@+id/Btwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#8E6BBD"
@@ -145,7 +145,7 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button22"
+            android:id="@+id/Bfive"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#8E6BBD"
@@ -157,7 +157,7 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button23"
+            android:id="@+id/Beight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#8E6BBD"
@@ -169,7 +169,7 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button25"
+            android:id="@+id/Bthree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#8E6BBD"
@@ -181,7 +181,7 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button26"
+            android:id="@+id/Btimes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#40216A"
@@ -193,7 +193,7 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button27"
+            android:id="@+id/Bsix"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#8E6BBD"
@@ -205,7 +205,7 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button28"
+            android:id="@+id/Bminus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#40216A"
@@ -217,7 +217,7 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button29"
+            android:id="@+id/Bnine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#8E6BBD"
@@ -229,7 +229,7 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button30"
+            android:id="@+id/Bdecimal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#8E6BBD"
@@ -241,7 +241,7 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button33"
+            android:id="@+id/Bequals"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#40216A"
@@ -253,7 +253,7 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button31"
+            android:id="@+id/Bplus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#40216A"
@@ -267,17 +267,18 @@
     </androidx.gridlayout.widget.GridLayout>
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="125dp"
-        android:layout_height="59dp"
-        android:text="0"
-        android:textAlignment="viewEnd"
+        android:id="@+id/calcDisplay"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:text="<calcput>"
+        android:textAlignment="textEnd"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
-        app:layout_constraintEnd_toEndOf="@+id/gridLayout" />
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/uiaicat"
         android:layout_width="149dp"
         android:layout_height="148dp"
         android:layout_marginBottom="20dp"
